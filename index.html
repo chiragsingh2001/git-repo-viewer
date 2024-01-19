@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Profile Viewer</h1>
+        </header>
+        <section id="profile-section">
+            <!-- Profile information will be displayed here -->
+        </section>
+        <section id="repositories-section">
+            <!-- Repositories will be displayed here -->
+        </section>
+        <footer>
+            <div id="pagination">
+                <label for="perPageSelect">Repositories per page:</label>
+                <select id="perPageSelect" onchange="changePerPage()">
+                  <option value="10" selected>10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                <button id="prevBtn" onclick="prevPage()" disabled>Previous Page</button>
+                <span id="currentPage">1</span>
+                <button id="nextBtn" onclick="nextPage()">Next Page</button>
+              </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
